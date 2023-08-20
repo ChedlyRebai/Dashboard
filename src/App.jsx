@@ -10,6 +10,7 @@ import Ecommerce from './pages/Ecommerce';
 import Orders from './pages/Orders';
 import Employees from './pages/Employees';
 import Customers from './pages/Customers';
+import Editor from './pages/Editor';
 import './App.css'
 import './index.css'
 import Calendar from './pages/Calendar';
