@@ -15,6 +15,7 @@ import './App.css'
 import './index.css'
 import Calendar from './pages/Calendar';
 import ThemeSettings from './components/ThemeSettings';
+import Kanban from './pages/Kanban';
 function App() {
  // const [activeMenu,setActiveMenu] = useState(false)
  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -70,6 +71,8 @@ function App() {
                 <Route path="/customers" element={<Customers />} />
                 <Route path="/calendar" element={<Calendar/>} />
                 <Route path="/editor" element={<Editor/>} />
+                <Route path="/kanban" element={<Kanban/>} />
+
                 <Route path="*" element={<h1>Not Found</h1>} />
               </Routes>
             </div>
