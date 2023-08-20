@@ -64,11 +64,11 @@ function App() {
               <Routes>
                 <Route path="/" element={<Ecommerce/>} />
                 <Route path="/ecommerce" element={(<Ecommerce />)} />
-
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/customers" element={<Customers />} />
                 <Route path="/calendar" element={<Calendar/>} />
+                <Route path="/editor" element={<Editor/>} />
                 <Route path="*" element={<h1>Not Found</h1>} />
               </Routes>
             </div>
