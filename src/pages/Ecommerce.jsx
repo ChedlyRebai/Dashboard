@@ -36,14 +36,14 @@ const Ecommerce = () => {
 
   
   return (
-     <div className="w-full h-screen bg-gray-50">
+     <div className="w-full  h-screen bg-gray-50">
       <div className="flex flex-wrap lg:flex-nowrap justify-center w-full">
         <div className="bg-gray dark:text-gray-200 dark:bg-secondary-dark-bg  rounded-xl w-full  p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
            <Stat/>
         </div>
       </div>
 
-      <div className="flex gap-10 flex-wrap  mt-1 w-full">
+      <div className="flex gap-10 flex-wrap    mt-1 w-full  ">
           <div className="bg-white sm:mx-3 dark:text-gray-200 dark:bg-secondary-dark-bg sm:m-3 sm:p-4 rounded-2xl  w-full">
             <div className="flex justify-between items-center"> 
               <p className="font-semibold text-xl">Revenus</p>
@@ -89,7 +89,7 @@ const Ecommerce = () => {
                 </div> */}
               </div>
               <div className=" ">
-                <LineChart width={screenSize < 500 ? screenSize : 600} height={300}/>
+                <LineChart  width={screenSize < 500 ? screenSize : 700} height={300}/>
               </div>
             </div>
           </div> 
