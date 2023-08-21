@@ -49,15 +49,15 @@ const Sidebar = () => {
           </div>
 
           <div className="mt-10">
-            {links.map((item)=>(
-              <div key={item.title} className="text-gray-600 m-3 mt-4 uppercase ">
+            {links.map((item,i)=>(
+              <div key={i} className="text-gray-600 m-3 mt-4 uppercase ">
                 <p className='text-gray-600 m-3 mt-4 uppercase cursor-pointer'>
                 {item.title}
                 </p>
-                {item.links.map((link)=>(
+                {item.links.map((link,j)=>(
                  <NavLink
                  to={`/${link.name}`}
-                 key={link.name}
+                 key={j}
                  onClick={handleCloseSideBar}
                  style={({ isActive }) => ({
                    backgroundColor: isActive ? currentColor : '',

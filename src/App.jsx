@@ -1,6 +1,6 @@
 
 import React, { useEffect ,useState} from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import Sidebar from './components/Sidebar';
@@ -64,7 +64,9 @@ function App() {
             <div >
               
               <Routes>
-                <Route path="/" element={<Ecommerce/>} />
+              <Route path='/' element={ <Ecommerce/> }/>
+                <Route path="/dashboard" element={<Ecommerce/>} />
+                
                 <Route path="/ecommerce" element={(<Ecommerce />)} />
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />

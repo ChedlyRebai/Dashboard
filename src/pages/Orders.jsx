@@ -2,17 +2,17 @@ import React from 'react';
 import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
 
 import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
-import { Header } from '../components';
+import  Header  from '../components/Header';
 
 const Orders = () => {
   const editing = { allowDeleting: true, allowEditing: true };
   const handleSave = (args) => {
-    console.log(args);
+    
   };
 
   // Function to handle row deletion
   const handleDelete = (args) => {
-    console.log(args.data[0].OrderID);
+   
   };
 
   // Function to handle adding new row
@@ -41,10 +41,10 @@ const Orders = () => {
         allowGrouping
         allowKeyboard
         allowRow
-        actionBegin={handleSave} // Hook to handle editing/save action
-        actionComplete={handleDelete}
+        
+        
         allowVirtualScrolling
-        /* Add new options here */
+     
         showColumnChooser
         allowRowHeightResizing
         allowCellSelection
