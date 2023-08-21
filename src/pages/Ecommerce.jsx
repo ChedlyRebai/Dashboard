@@ -45,7 +45,7 @@ const Ecommerce = () => {
 
       <div className="flex gap-10 flex-wrap    mt-1 w-full  ">
           <div className="bg-white sm:mx-3 dark:text-gray-200 dark:bg-secondary-dark-bg sm:m-3 sm:p-4 rounded-2xl  w-full">
-            <div className="flex justify-between items-center"> 
+            <div className="flex mx-3 justify-between items-center"> 
               <p className="font-semibold text-xl">Revenus</p>
               <div className="flex items-center gap-4">
                 <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
