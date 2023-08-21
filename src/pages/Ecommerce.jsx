@@ -13,11 +13,14 @@ import { BiDotsHorizontalRounded } from "react-icons/bi";
 import  SparkLine  from "../components/Charts/SparkLine";
 import { SparklineAreaData } from "../data/dummy";
 import LineChart from '../components/Charts/LineChart';
+import { useStateContext } from '../contexts/ContextProvider';
 // import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 // import { useStateContext } from '../contexts/ContextProvider';
 // import product9 from '../data/product9.jpg';
 
 const Ecommerce = () => {
+  const { currentColor, activeMenu, setActiveMenu, screenSize } = useStateContext();
+
   const dataSource = [
     { x: 0, xval: '2005', yval: 20090440 },
     { x: 1, xval: '2006', yval: 20264080 },
@@ -31,7 +34,6 @@ const Ecommerce = () => {
     { x: 9, xval: '2014', yval: 22507620 },
   ];
 
-  const [currentColor, setCurrentColor] = useState('rgb(242, 252, 253)');
   
   return (
      <div className="w-full h-screen bg-gray-50">
@@ -42,7 +44,7 @@ const Ecommerce = () => {
       </div>
 
       <div className="flex gap-10 flex-wrap  mt-1 w-full">
-          <div className="bg-white mx-3 dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780 w-full">
+          <div className="bg-white mx-3 dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl  w-full">
             <div className="flex justify-between items-center">
               <p className="font-semibold text-xl">Revenus</p>
               <div className="flex items-center gap-4">
@@ -87,7 +89,7 @@ const Ecommerce = () => {
                 </div> */}
               </div>
               <div className=" ">
-                <LineChart width={600} height={300}/>
+                <LineChart width={screenSize} height={300}/>
               </div>
             </div>
           </div> 
