@@ -9,5 +9,5 @@ Currently, two official plugins are available:
 
 # Dashboard
 
-Check out the dashboard website: [https://chedlydashboard.netlify.app/](https://chedlydashboard.netlify.app/)
+Check out the dashboard website: [https://dashboard-five-beryl.vercel.app/](https://dashboard-five-beryl.vercel.app/)
 
