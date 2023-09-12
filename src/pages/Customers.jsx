@@ -6,7 +6,8 @@ import  Header  from '../components/Header';
 
 const Customers = () => {
   const selectionsettings = { persistSelection: true };
-  const toolbarOptions = ['Delete'];
+  const toolbarOptions = ['Delete', 'Update', 'Cancel', 'Edit', 'Add', 'Search',
+   'ColumnChooser', 'PdfExport', 'ExcelExport', 'CsvExport', 'Print', 'Sort', 'Filter', 'Group', 'ungroup', 'Reorder', 'RowDragAndDrop'];
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
