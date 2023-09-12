@@ -16,7 +16,7 @@ import Notification from './Notification';
 
 
 const Navbar = () => {
-  const {activeMenu,screenSize, setScreenSize ,setActiveMenu ,isClicked, setIsClicked,handleClick,  currentColor  } = useStateContext()
+  const {activeMenu,screenSize,chat,setChat,profile,setProfile ,notification,setNotification, setScreenSize ,setActiveMenu ,isClicked, setIsClicked,handleClick,  currentColor  } = useStateContext()
   
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -38,17 +38,15 @@ const Navbar = () => {
   return (
     <div className='flex justify-between p-2 md:mx-6 relative'>
       <NavButton customFunc={() =>setActiveMenu((prev)=> !prev)} icon={<AiOutlineMenu/>}  title={'menu'} color={'blue'}/>
-
       <div className="flex">
-      <NavButton customFunc={() =>{handleClick('cart')}} icon={<FiShoppingCart/>} dotColor={'red'} title={'Cart'} color={currentColor}/>
-      <NavButton title="Chat" color={currentColor} dotColor={'red'} customFunc={() => {handleClick('chat')}}  icon={<BsChatLeft />} />
-      <NavButton title="Notification" color={currentColor} dotColor="red"  customFunc={() => {handleClick('notification')}}  icon={<RiNotification3Line />} />
+       <NavButton title="Chat" color={currentColor} dotColor={'red'}        customFunc={()=> setChat(prev => !prev)}  icon={<BsChatLeft />} />
+      <NavButton title="Notification" color={currentColor} dotColor="red"  customFunc={()=> setNotification(prev => !prev)}  icon={<RiNotification3Line />} />
       <TooltipComponent
       content={"profile"}
       position="BottomCenter"
       >
         <div className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-full"
-        onClick={() => {handleClick('userProfile')}}
+        onClick={() => {setProfile(prev => !prev)}}
         >
           <img className='rounded-full w-8 h-8' src={avatar} />
           <p>
@@ -62,9 +60,9 @@ const Navbar = () => {
       </TooltipComponent>
       {
         isClicked.cart && <Cart/>}
-        {isClicked.chat && <Chat/> }
-        {isClicked.userProfile && <UserProfile/> }
-        {isClicked.notification && <Notification/> }
+        {chat && <Chat/> }
+        {profile && <UserProfile/> }
+        {notification && <Notification/> }
     </div>
     </div>
   )

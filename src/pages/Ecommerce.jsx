@@ -44,7 +44,7 @@ const Ecommerce = () => {
       </div>
 
       <div className="flex gap-10 flex-wrap    mt-1 w-full  ">
-          <div className="bg-white sm:mx-3 dark:text-gray-200 dark:bg-secondary-dark-bg sm:m-3 sm:p-4 rounded-2xl  w-full">
+          <div className="bg-white sm:mx-3  sm:m-3 sm:p-4 rounded-2xl  w-full">
             <div className="flex mx-3 justify-between items-center"> 
               <p className="font-semibold text-xl">Revenus</p>
               <div className="flex items-center gap-4">
@@ -67,7 +67,7 @@ const Ecommerce = () => {
                   <p>
                     <span className="text-3xl font-semibold">$7954</span>
                     <span className="p-1 ml-1 hover:drop-shadow-xl cursor-pointer
-                    rounded-full bg-green-400 text-white dark:bg-secondary-dark-bg dark:text-gray-200">
+                    rounded-full bg-green-400 text-white ">
                     77%</span>
                   </p>
                   <p className="text-gray-600 mt-1 ">Total Income</p>
@@ -77,7 +77,7 @@ const Ecommerce = () => {
                   <p>
                     <span className="text-3xl font-semibold">$7954</span>
                     <span className="p-1 hover:drop-shadow-xl ml-1 cursor-pointer
-                    rounded-full bg-green-400 text-white dark:bg-secondary-dark-bg dark:text-gray-200">
+                    rounded-full bg-green-400 text-white ">
                     77%</span>
                   </p>
                   <p className="text-gray-600 mt-1">Total Income</p>

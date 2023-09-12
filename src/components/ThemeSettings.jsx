@@ -12,9 +12,9 @@ const ThemeSettings = () => {
   const { setColor, setMode, setCurrentColor,currentMode, currentColor, setThemeSettings } = useStateContext();
   return (
     <div className="bg-black transition duration-300 ease-in-out bg-opacity-70 w-screen fixed nav-item top-0 right-0">
-    <div className="float-right h-screen dark:text-gray-200  bg-white dark:bg-[#626366] w-400">
+    <div className="float-right h-screen   bg-white  w-400">
       <div className="flex justify-between items-center p-4 ml-4  ">
-        <p className='font-semibold text-xl'>Settings</p>
+        <p className='font-semibold text-xl'>Theme Colors</p>
         <button
         type='button'
         onClick={()=>{setThemeSettings(false);
@@ -31,36 +31,10 @@ const ThemeSettings = () => {
         </button>  
       </div>
       
-      <div className="flex-col border-t-2 border-color p-4 mt-1 ml-4">
-        <p className="font-semibold text-lg">Theme Option</p>
-        <div className="mt-4">
-          <input type="Checkbox" 
-          id='Light'
-          name='theme'
-          value={'Light'}
-          className='cursor-pointer'
-          onChange={setMode}
-          checked={currentMode === 'Light'}
-
-          />
-          <label htmlFor="Light" className='ml-2 text-md cursor-pointer'>Light</label>
-        </div>
-        <div className="mt-2">
-          <input type="Checkbox" 
-          id='Dark'
-          name='theme'
-          value={'Dark'}
-          className='cursor-pointer'
-          onChange={setMode}
-          checked={currentMode === 'Dark'}
-          />
-          <label htmlFor="Dark" className='ml-2 text-md cursor-pointer'>Dark</label>
-        </div>
-        
-      </div>
+      
         
       <div className="flex-col border-t-2 border-color p-4 mt-1 ml-4">
-        <p className="font-semibold text-lg">Theme Colors</p>
+        
         <div className="flex gap-3 ">
           {themeColors.map((item,index)=>(
             <div className="relative mt-2 cursor-pointer flex gap-5 items-center">
