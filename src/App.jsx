@@ -21,7 +21,6 @@ import Calendar from './pages/Calendar';
 import ThemeSettings from './components/ThemeSettings';
 import Kanban from './pages/Kanban';
 import Area from './pages/Charts/Area';
-import Financial from './pages/Charts/Financial';
 import Line from './pages/Charts/Line';
 
 function App() {

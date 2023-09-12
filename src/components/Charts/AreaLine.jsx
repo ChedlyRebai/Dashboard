@@ -47,7 +47,7 @@ const AreaLine = ({width,height}) => {
     },
   };
 
-  return <Chart options={options} series={options.series} type="bar" width={width} height={height} />;
+  return <Chart options={options} series={options.series} type="area" width={width} height={height} />;
 };
 
 
