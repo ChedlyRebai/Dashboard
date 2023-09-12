@@ -3,6 +3,8 @@ import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import {links} from '../data/dummy'
+import { Fragment} from 'react'
+import { Dialog, Menu, Transition } from '@headlessui/react'
 import { useStateContext } from '../contexts/ContextProvider';
 import { Link,NavLink } from 'react-router-dom'
 const Sidebar = () => {
@@ -17,7 +19,8 @@ const Sidebar = () => {
     }
   }
   return (
-    <div className='ml-3 
+    <div 
+    className='ml-3 
     h-screen 
     md:overflow-hidden 
     overflow-auto md:hover:overflow-auto pb-10

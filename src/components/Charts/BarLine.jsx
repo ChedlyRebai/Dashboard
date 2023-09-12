@@ -6,7 +6,7 @@ import { useStateContext } from '../../contexts/ContextProvider';
 
 import Chart from 'react-apexcharts';
 
-const Pie = ({width,height}) => {
+const BarLine = ({width,height}) => {
   const options = {
     series: [
       {
@@ -48,9 +48,9 @@ const Pie = ({width,height}) => {
     },
   };
 
-  return <Chart options={options} series={options.series} type="" width={width} height={height} />;
+  return <Chart options={options} series={options.series} type="bar" width={width} height={height} />;
 };
 
 
 
-export default Pie;
+export default BarLine;
