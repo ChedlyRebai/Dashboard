@@ -479,14 +479,14 @@ export const links = [
   {
     title: 'Pages',
     links: [
-      {
+     /* {
         name: 'orders',
-        icon: <AiOutlineShoppingCart />,
-      },
-      {
+        icon: <AiOutlineShoppingCart/>,
+      },*/
+      /*{
         name: 'Users',
         icon: <IoMdContacts />,
-      },
+      },*/
       {
         name: 'users',
         icon: <RiContactsLine />,
