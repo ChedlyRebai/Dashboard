@@ -5,8 +5,9 @@ import { FiBarChart, FiCreditCard, FiEdit, FiPieChart, FiShoppingBag, FiShopping
 import { GrLocation } from 'react-icons/gr';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
-import { RiContactsLine } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
+
+import Employees from '../pages/Employees';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -479,18 +480,20 @@ export const links = [
   {
     title: 'Pages',
     links: [
-     /* {
+     
+      /*{
         name: 'orders',
         icon: <AiOutlineShoppingCart/>,
       },*/
-      /*{
-        name: 'Users',
-        icon: <IoMdContacts />,
-      },*/
+
       {
+        name: 'Users',
+        icon: <Employees />,
+      },
+      /*{
         name: 'users',
         icon: <RiContactsLine />,
-      },
+      },*/
     ],
   },
   {
@@ -605,6 +608,7 @@ export const chatData = [
     time: '1:12 AM',
   },
 ];
+
 
 export const earningData = [
   {
