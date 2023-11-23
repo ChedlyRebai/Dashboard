@@ -2,13 +2,13 @@
 // import { ArrowSmDownIcon, ArrowSmUpIcon } from '@heroicons/react/solid'
 // import { CursorClickIcon, MailOpenIcon, UsersIcon } from '@heroicons/react/outline'
 
-import { HiArrowSmDown, HiArrowSmUp, HiCursorClick, HiMailOpen, HiUsers } from "react-icons/hi"
+import { HiArrowSmDown, HiArrowSmUp, HiCursorClick, HiMailOpen, HiUsers } from "react-icons/hi";
 import { useStateContext } from "../contexts/ContextProvider";
 
 // Users
 
 const stats = [
-  { id: 1, name: 'Total Subscribers', stat: '71,897', icon: HiUsers, change: '122', changeType: 'increase' },
+  { id: 1, name: 'Users', stat: '71,897', icon: HiUsers, change: '122', changeType: 'increase' },
   { id: 2, name: 'Avg. Open Rate', stat: '58.16%', icon: HiMailOpen, change: '5.4%', changeType: 'increase' },
   { id: 3, name: 'Avg. Click Rate', stat: '24.57%', icon: HiCursorClick, change: '3.2%', changeType: 'decrease' },
 ]
