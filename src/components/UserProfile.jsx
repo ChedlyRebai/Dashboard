@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
-import { BiDotsVertical, BiX } from 'react-icons/bi'
+import { Fragment, useState } from 'react'
+import { BiX } from 'react-icons/bi'
 import { useStateContext } from '../contexts/ContextProvider'
 
 function classNames(...classes) {
@@ -69,7 +69,7 @@ export default function UserProfile() {
                               <p className="text-sm text-gray-500">@ashleyporter</p>
                             </div>
                             <div className="mt-5 flex flex-wrap space-y-3 sm:space-y-0 sm:space-x-3">
-                              <button
+                              {/* <button
                                 type="button"
                                 className="inline-flex w-full flex-shrink-0 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:flex-1"
                               >
@@ -80,13 +80,13 @@ export default function UserProfile() {
                                 className="inline-flex w-full flex-1 items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                               >
                                 Call
-                              </button>
+                              </button> */}
                               <span className="ml-3 inline-flex sm:ml-0">
                                 <Menu as="div" className="relative inline-block text-left">
-                                  <Menu.Button className="inline-flex items-center rounded-md border border-gray-300 bg-white p-2 text-sm font-medium text-gray-400 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                                  {/* <Menu.Button className="inline-flex items-center rounded-md border border-gray-300 bg-white p-2 text-sm font-medium text-gray-400 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                                     <span className="sr-only">Open options menu</span>
-                                    <BiDotsVertical className="h-5 w-5" aria-hidden="true" />
-                                  </Menu.Button>
+                                    <BiDotsVertical className="h-5 w-5" aria-hidden="true" /> 
+                            </Menu.Button>*/}
                                   <Transition
                                     as={Fragment}
                                     enter="transition ease-out duration-100"

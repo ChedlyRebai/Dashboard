@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
-import { SiShopware } from 'react-icons/si';
-import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import {links} from '../data/dummy'
-import { Fragment} from 'react'
-import { Dialog, Menu, Transition } from '@headlessui/react'
+import React from 'react';
+import { MdOutlineCancel } from 'react-icons/md';
+import { SiShopware } from 'react-icons/si';
+import { Link, NavLink } from 'react-router-dom';
 import { useStateContext } from '../contexts/ContextProvider';
-import { Link,NavLink } from 'react-router-dom'
+import { links } from '../data/dummy';
 const Sidebar = () => {
   const { currentColor, activeMenu, setActiveMenu, screenSize } = useStateContext();
 
@@ -37,7 +35,7 @@ const Sidebar = () => {
             tracking-tight text-slate-900'
             >            
               <SiShopware/>
-              <span>Ano</span>
+              <span>DEPANINI</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
