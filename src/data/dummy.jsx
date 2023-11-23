@@ -4,10 +4,10 @@ import { BsBoxSeam, BsChatLeft, BsCurrencyDollar, BsKanban, BsShield } from 'rea
 import { FiBarChart, FiCreditCard, FiEdit, FiPieChart, FiShoppingBag, FiShoppingCart, FiStar } from 'react-icons/fi';
 import { GrLocation } from 'react-icons/gr';
 import { HiOutlineRefresh } from 'react-icons/hi';
+import { IoMdContacts } from 'react-icons/io';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { RiContactsLine } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
-
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -19,6 +19,7 @@ import product4 from './product4.jpg';
 import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
+
 
 export const gridOrderImage = (props) => (
   <div>
@@ -486,11 +487,10 @@ export const links = [
         icon: <AiOutlineShoppingCart/>,
       },*/
 
-      /*{
-        name: 'Users',
+      {
+        name: 'employees',
         icon: <IoMdContacts />,
-      },*/
-
+      },
       {
         name: 'Users',
         icon: <RiContactsLine />,
