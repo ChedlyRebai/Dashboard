@@ -4,8 +4,8 @@ import { BsBoxSeam, BsChatLeft, BsCurrencyDollar, BsKanban, BsShield } from 'rea
 import { FiBarChart, FiCreditCard, FiEdit, FiPieChart, FiShoppingBag, FiShoppingCart, FiStar } from 'react-icons/fi';
 import { GrLocation } from 'react-icons/gr';
 import { HiOutlineRefresh } from 'react-icons/hi';
-import { IoMdContacts } from 'react-icons/io';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
+import { RiContactsLine } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -483,14 +483,14 @@ export const links = [
         name: 'orders',
         icon: <AiOutlineShoppingCart />,
       },*/
-      {
+     /* {
         name: 'Users',
         icon: <IoMdContacts />,
+      },*/
+      {
+        name: 'users',
+        icon: <RiContactsLine />,
       },
-      // {
-      //   name: 'users',
-      //   icon: <RiContactsLine />,
-      // },
     ],
   },
   {
